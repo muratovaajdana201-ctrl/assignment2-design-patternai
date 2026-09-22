@@ -258,27 +258,33 @@ assignment2-design-patterns/
 ├── src/
 │   └── main/
 │       └── java/
+│           │
 │           ├── factorymethod/
 │           │   ├── MusicInstrument.java
 │           │   ├── PianoMusicInstrument.java
 │           │   ├── GuitarMusicInstrument.java
 │           │   ├── DrumMusicInstrument.java
+│           │   │
 │           │   ├── MusicInstrumentFactory.java
 │           │   ├── PianoMusicInstrumentFactory.java
 │           │   ├── GuitarMusicInstrumentFactory.java
 │           │   ├── DrumMusicInstrumentFactory.java
+│           │   │
 │           │   └── Main.java
 │           │
 │           └── abstractfactory/
 │               ├── MusicInstrument.java
 │               ├── InstrumentCase.java
+│               │
 │               ├── ClassicalPiano.java
 │               ├── PianoCase.java
 │               ├── ElectricGuitar.java
 │               ├── GuitarCase.java
+│               │
 │               ├── MusicFamilyFactory.java
 │               ├── ClassicalMusicFactory.java
 │               ├── RockMusicFactory.java
+│               │
 │               ├── MusicStudio.java
 │               └── Main.java
 │
@@ -286,7 +292,8 @@ assignment2-design-patterns/
 │   ├── FactoryMethod.png
 │   └── AbstractFactory.png
 │
-└── README.md
+├── README.md
+└── pom.xml
 ## 8. How to Run
 
 Run the Main class in the factorymethod package to test the
