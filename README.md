@@ -187,3 +187,141 @@ MusicStudio studio =
         new MusicStudio(factory);
 
 studio.prepareMusicSet();
+## 4.6 Advantages
+
+The main advantage of Abstract Factory is that it creates a complete
+family of related products.
+
+It allows the application to switch between product families without
+changing the client code.
+
+It also helps prevent incompatible products from being mixed because
+the products are created by the same Concrete Factory.
+
+## 4.7 Disadvantages
+
+The main disadvantage is that adding a new type of product to the
+family can require changes to the Abstract Factory and all Concrete
+Factories.
+
+For example, if a new product such as MusicStand is added to the
+family, every factory may need a new creation method.
+
+Therefore, Abstract Factory can become more complicated when the product
+family changes frequently.
+
+## 5. Factory Method vs Abstract Factory
+
+Factory Method creates one type of product.
+
+In this project, Factory Method creates individual
+MusicInstrument objects such as piano, guitar, and drum.
+
+Abstract Factory creates a family of related products.
+
+In this project, Abstract Factory creates both a MusicInstrument and
+an InstrumentCase.
+
+Factory Method mainly demonstrates inheritance because Concrete
+Creators extend the abstract Creator.
+
+Abstract Factory demonstrates composition because MusicStudio
+receives a factory object through its constructor.
+
+Therefore, Factory Method focuses on creating one product, while
+Abstract Factory focuses on creating a compatible family of products.
+
+## 6. SOLID Principles
+Open/Closed Principle
+
+The project demonstrates the Open/Closed Principle because new
+instrument types can be added without modifying the existing product
+classes.
+
+For example, a new ViolinMusicInstrument and
+ViolinMusicInstrumentFactory could be added.
+
+Single Responsibility Principle
+
+The classes have separate responsibilities.
+
+The instrument classes are responsible for instrument behavior.
+
+The factory classes are responsible for object creation.
+
+The client is responsible for using the created products.
+
+## 7. Project Structure
+assignment2-design-patterns/
+│
+├── src/
+│   └── main/
+│       └── java/
+│           ├── factorymethod/
+│           │   ├── MusicInstrument.java
+│           │   ├── PianoMusicInstrument.java
+│           │   ├── GuitarMusicInstrument.java
+│           │   ├── DrumMusicInstrument.java
+│           │   ├── MusicInstrumentFactory.java
+│           │   ├── PianoMusicInstrumentFactory.java
+│           │   ├── GuitarMusicInstrumentFactory.java
+│           │   ├── DrumMusicInstrumentFactory.java
+│           │   └── Main.java
+│           │
+│           └── abstractfactory/
+│               ├── MusicInstrument.java
+│               ├── InstrumentCase.java
+│               ├── ClassicalPiano.java
+│               ├── PianoCase.java
+│               ├── ElectricGuitar.java
+│               ├── GuitarCase.java
+│               ├── MusicFamilyFactory.java
+│               ├── ClassicalMusicFactory.java
+│               ├── RockMusicFactory.java
+│               ├── MusicStudio.java
+│               └── Main.java
+│
+├── diagrams/
+│   ├── FactoryMethod.png
+│   └── AbstractFactory.png
+│
+└── README.md
+## 8. How to Run
+
+Run the Main class in the factorymethod package to test the
+Factory Method implementation.
+
+Expected output:
+
+Playing piano music.
+Playing guitar music.
+Playing drum music.
+
+Run the Main class in the abstractfactory package to test the
+Abstract Factory implementation.
+
+For the Classical family, the output is similar to:
+
+Playing classical piano music.
+Protecting the piano with a classical piano case.
+
+The factory can then be changed to RockMusicFactory to switch to the
+Rock family.
+
+## 9. Conclusion
+
+This assignment demonstrates the Factory Method and Abstract Factory
+patterns using the Music Instruments domain.
+
+Factory Method separates the creation of individual instruments from
+the client code.
+
+Abstract Factory allows the application to create complete and
+compatible families of related products.
+
+The implementation also demonstrates the Open/Closed Principle and the
+Single Responsibility Principle.
+
+The patterns provide useful flexibility, but they can be unnecessary
+for very small applications because they introduce additional classes
+and complexity.
