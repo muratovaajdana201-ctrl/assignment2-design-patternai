@@ -187,6 +187,7 @@ MusicStudio studio =
         new MusicStudio(factory);
 
 studio.prepareMusicSet();
+```
 ## 4.6 Advantages
 
 The main advantage of Abstract Factory is that it creates a complete
