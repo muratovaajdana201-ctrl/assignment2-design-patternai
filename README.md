@@ -253,40 +253,14 @@ The factory classes are responsible for object creation.
 The client is responsible for using the created products.
 
 ## 7. Project Structure
+7. Project Structure
+
 assignment2-design-patterns/
-│
 ├── src/
 │   └── main/
 │       └── java/
-│           │
 │           ├── factorymethod/
-│           │   ├── MusicInstrument.java
-│           │   ├── PianoMusicInstrument.java
-│           │   ├── GuitarMusicInstrument.java
-│           │   ├── DrumMusicInstrument.java
-│           │   │
-│           │   ├── MusicInstrumentFactory.java
-│           │   ├── PianoMusicInstrumentFactory.java
-│           │   ├── GuitarMusicInstrumentFactory.java
-│           │   ├── DrumMusicInstrumentFactory.java
-│           │   │
-│           │   └── Main.java
-│           │
 │           └── abstractfactory/
-│               ├── MusicInstrument.java
-│               ├── InstrumentCase.java
-│               │
-│               ├── ClassicalPiano.java
-│               ├── PianoCase.java
-│               ├── ElectricGuitar.java
-│               ├── GuitarCase.java
-│               │
-│               ├── MusicFamilyFactory.java
-│               ├── ClassicalMusicFactory.java
-│               ├── RockMusicFactory.java
-│               │
-│               ├── MusicStudio.java
-│               └── Main.java
 │
 ├── diagrams/
 │   ├── FactoryMethod.png
