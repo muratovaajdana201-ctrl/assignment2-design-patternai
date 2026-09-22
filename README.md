@@ -254,47 +254,15 @@ The client is responsible for using the created products.
 
 ## 7. Project Structure
 
-assignment2-design-patterns/
-│
-├── src/
-│   └── main/
-│       └── java/
-│           │
-│           ├── factorymethod/
-│           │   ├── MusicInstrument.java
-│           │   ├── PianoMusicInstrument.java
-│           │   ├── GuitarMusicInstrument.java
-│           │   ├── DrumMusicInstrument.java
-│           │   │
-│           │   ├── MusicInstrumentFactory.java
-│           │   ├── PianoMusicInstrumentFactory.java
-│           │   ├── GuitarMusicInstrumentFactory.java
-│           │   ├── DrumMusicInstrumentFactory.java
-│           │   │
-│           │   └── Main.java
-│           │
-│           └── abstractfactory/
-│               ├── MusicInstrument.java
-│               ├── InstrumentCase.java
-│               │
-│               ├── ClassicalPiano.java
-│               ├── PianoCase.java
-│               ├── ElectricGuitar.java
-│               ├── GuitarCase.java
-│               │
-│               ├── MusicFamilyFactory.java
-│               ├── ClassicalMusicFactory.java
-│               ├── RockMusicFactory.java
-│               │
-│               ├── MusicStudio.java
-│               └── Main.java
-│
-├── diagrams/
-│   ├── FactoryMethod.png
-│   └── AbstractFactory.png
-│
-├── README.md
-└── pom.xml
+assignment2-design-patterns
+• src/main/java
+  • factorymethod (Part A)
+  • abstractfactory (Part B)
+• diagrams
+  • FactoryMethod.png
+  • AbstractFactory.png
+• pom.xml
+• README.md
 ## 8. How to Run
 
 Run the Main class in the factorymethod package to test the
